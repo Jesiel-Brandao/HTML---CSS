@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    <h1>Imagens Flexivel</h1>
+    <p>
+       Voçê esta vendo a imagem comleta? Experimente aompliuar o tamanho <br>
+       da sua janela para uma melhor experiencia
+    </p>
+
+    <picture>
+        <!-- Essa imagen vai abrir em uma dispositivo de pequeno porte, passou de 750pix abre a proxima imagem -->
+        <source media="(max-width: 790px)" srcset="imagens/paisagem-p.png" 
+        type="image/png">
+    
+         <!-- Essa imagen vai abrir em um de medio porte, passou de 1250 pix abre a proxima imagem  -->
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" 
+        type="image/png"> 
+    
+        <!-- Essa imagen vai abrir em um dispositivo de grande porte  -->
+        <img src="Imagens/paisagem-g.png" alt="Imagen dinamica funciona">
+    </picture>
+
+    <h1>Áudio no meu site.</h1>
+    <!-- Esse é a maneiura mais simples de adicionar áudio no site -->
+    <!-- <audio src="midia/musica-meu-site.mp3" autoplay controls></audio> -->
+
+    <!-- Aqui temos outras opções de arquivos para o site além do MP3 -->
+<audio preload="auto" autoplay controls>
+        <source src="midia/musica-meu-site.mp3" type="audio/mpeg">
+        <source src="midia/musica-meu-site.ogg" type="audio/ogg">
+        <source src="midia/musica-meu-site.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não pode reproduzir esse áudio.
+        <a href ="midia/musica-meu-site.mp3"> Clique aqui para baixar o arquivo MP3 </a> </p>
+    </audio>
+    
+</body>
+</html>
