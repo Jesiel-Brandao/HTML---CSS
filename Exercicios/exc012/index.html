@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servodor.</p>
+
+    <!-- Essa é a maneira mais simples de adicionar um video no meu site -->
+    <!-- Essse é em formato MP4 -->
+    <!-- Existe outros formatos de arquivos de video compativel com varios navegadores -->
+    <!-- <video src="midia/meu-video.mp4" width="500" controls></video> -->
+
+    <!-- Aqui temos varios arquivos em formatos diferente para adicionar um
+    video no site, oque podera reproduzir em varios navegadores. -->
+   <video controls poster="imagens/limoes-capa.png" width="560" height="315" autoplay; loop
+        <source src="midia/meu-video.mp4" type="midia/mp4">
+        <source src="midia/meu-video.m4v" type="midia/mp4">
+        <source src="midia/meu-video.webm" type="midia/webm">
+        <source src="midia/meu-video.ogv" type="midia/ogg">
+   </video>
+
+   <p> Videos hospedados diretamente no site usando a TAG video  podem e vão consumir muito <br>
+       trafego de dados, o que ira ter um grande custo financeiro de hospedagem do site.</p>
+
+    <h2>Inserindo video do YouTube</h2>
+    <!--Aqui vamos insewrir videos do yuotube, uma maneira que podemos economizar 
+    para termos um video no site. -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NtpRNp8gpiA"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
